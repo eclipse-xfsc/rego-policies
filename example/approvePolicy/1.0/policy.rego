@@ -5,9 +5,10 @@ _ = {
     "selections": [
         {
             "queryId": query.id,
-            "credentialId": credential.id
+            "credentialId": credential.credentialId
         } |
-        query := input.dcqlQuery.credentials[_]
         credential := input.credentials[_]
+        query := input.dcqlQuery.credentials[_]
+        credential.queryId == query.id
     ]
 }
