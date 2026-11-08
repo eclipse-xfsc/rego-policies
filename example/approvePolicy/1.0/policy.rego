@@ -1,5 +1,5 @@
 package example.approvePolicy
 
 _ = {
-    "approved": "true"
+    "approved": true
 }
