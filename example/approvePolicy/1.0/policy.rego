@@ -7,7 +7,7 @@ disclosures_for(query) = names {
     ]
 }
 
-result = {
+_ = {
     "approved": true,
     "selections": [
         {
