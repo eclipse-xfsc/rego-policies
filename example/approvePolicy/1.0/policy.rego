@@ -5,7 +5,11 @@ _ = {
     "selections": [
         {
             "queryId": query.id,
-            "credentialId": credential.credentialId
+            "credentialId": credential.credentialId,
+            "disclosures": [
+                claim.path[0] |
+                claim := query.claims[_]
+            ]
         } |
         credential := input.credentials[_]
         query := input.dcqlQuery.credentials[_]
