@@ -1,4 +1,4 @@
-package example.acceptPolicy
+package example.approvePolicy
 
 _ = {
     "approved": "true"
